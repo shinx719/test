@@ -1,8 +1,4 @@
 <div align="center">
-
-![CSS3](https://img.shields.io/badge/CSS-3-orange?style=flat-square&logo=css3)
-![HTML5](https://img.shields.io/badge/HTML-5-E34C26?style=flat-square&logo=html5)
-
 </div>
 
 ---
