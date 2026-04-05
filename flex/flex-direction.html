@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Пример flex-direction</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" type="image/jpg" href="../1111.jpg" />
+  <style>
+    /* Общие стили для контейнера и элементов */
+    .container {
+      display: flex;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 20px 0;
+      gap: 0px;
+    }
+    
+    /* Для горизонтальных примеров оставляем фиксированную высоту для наглядности */
+    .container.flex-row,
+    .container.flex-row-reverse {
+      height: auto;
+      width: 40%;
+    }
+    
+    /* Для вертикальных примеров убираем фиксированную высоту */
+    .container.flex-column,
+    .container.flex-column-reverse {
+      /* Высота определяется содержимым */
+    }
+    
+    .container > div {
+      flex: 0 0 auto;
+      width: 80px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #310736;
+    }
+    
+    /* Цвета для блоков */
+    .item-1 { background: #05ffb0; }
+    .item-2 { background: #00e7eb; }
+    .item-3 { background: #ff3860; }
+    .item-4 { background: #ffdd57; }
+    
+    /* Примеры flex-direction */
+    .flex-row { flex-direction: row; }
+    .flex-row-reverse { flex-direction: row-reverse; }
+    .flex-column { flex-direction: column; }
+    .flex-column-reverse { flex-direction: column-reverse; }
+  </style>
+</head>
+<body>
+  <!-- Подключение бокового меню -->
+  <iframe src="../sidebar.html" class="sidebar-frame" title="Боковая панель"></iframe>
+  
+  <header>
+    <h2 class="text-h1"><a href="#flex-direction">#flex-direction</a></h2>
+    <p>Определяет, как элементы Flexbox упорядочаются внутри контейнера Flexbox.</p>
+  </header>
+  
+  <!-- Пример flex-direction: row -->
+  <section>
+    <h4 class="copy-container" id="flex-direction">flex-direction: row;</h4>
+    <p>Элементы упорядочены слева направо (по направлению текста).</p>
+    <div class="container flex-row">
+      <div class="item-1">один</div>
+      <div class="item-2">два</div>
+      <div class="item-3">три</div>
+      <div class="item-4">четыре</div>
+    </div>
+  </section>
+  
+  <!-- Пример flex-direction: row-reverse -->
+  <section>
+    <h4 class="copy-container">flex-direction: row-reverse;</h4>
+    <p>Элементы упорядочены справа налево (обратное направление текста).</p>
+    <div class="container flex-row-reverse">
+      <div class="item-1">один</div>
+      <div class="item-2">два</div>
+      <div class="item-3">три</div>
+      <div class="item-4">четыре</div>
+    </div>
+  </section>
+  
+  <!-- Пример flex-direction: column -->
+  <section>
+    <h4 class="copy-container">flex-direction: column;</h4>
+    <p>Элементы упорядочены сверху вниз (вертикально).</p>
+    <div class="container flex-column">
+      <div class="item-1">один</div>
+      <div class="item-2">два</div>
+      <div class="item-3">три</div>
+      <div class="item-4">четыре</div>
+    </div>
+  </section>
+  
+  <!-- Пример flex-direction: column-reverse -->
+  <section>
+    <h4 class="copy-container">flex-direction: column-reverse;</h4>
+    <p>Элементы упорядочены снизу вверх (обратный порядок вертикального расположения).</p>
+    <div class="container flex-column-reverse">
+      <div class="item-1">один</div>
+      <div class="item-2">два</div>
+      <div class="item-3">три</div>
+      <div class="item-4">четыре</div>
+    </div>
+  </section>
+  
+</body>
+</html>

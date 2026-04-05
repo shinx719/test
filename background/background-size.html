@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\style.css" />
+    <link rel="icon" type="image/jpg" href="../1111.jpg" />
+</head>
+<body>
+    <iframe src="..\sidebar.html" class="sidebar-frame"></iframe>
+
+    <div>
+        <h2 class="text-h1">#background-size</h2>
+        <p>Определяет размер фонового изображения.</p>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-size: auto auto;</h4>
+        <p>Фоновое изображение сохранит свой первоначальный размер.</p>
+        <p>Например, это фоновое изображение имеет размер 960 пикселей на 640 пикселей . 
+        Его соотношение сторон составляет 3 на 2. 
+        Оно больше своего контейнера (высота которого составляет 150 пикселей), поэтому будет обрезано .</p>
+    </div>
+    <div class="container">
+        <div class="background-size auto"></div>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-size: 120px 80px;</h4>
+        <p>Вы можете указать размер в пикселях :</p>
+        <ul>
+            <li>первое значение — горизонтальный размер</li>
+            <li>второй — вертикальный размер</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="background-size px"></div>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-size: 100% 50%;</h4>
+        <p>Вы также можете использовать процентные значения. 
+        Помните, что это может изменить соотношение сторон фонового изображения и привести к неожиданным результатам.</p>
+    </div>
+    <div class="container">
+        <div class="background-size stopisat"></div>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-size: contain;</h4>
+        <p>Ключевое слово containизменит размер фонового изображения, чтобы оно оставалось полностью видимым .</p>
+    </div>
+    <div class="container">
+        <div class="background-size contain"></div>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-size: cover;</h4>
+        <p>Ключевое слово изменит размер фонового изображения, чтобы обеспечить полное покрытиеcover элемента .</p>
+    </div>
+    <div class="container">
+        <div class="background-size cover"></div>
+    </div>
+</body>
+</html>

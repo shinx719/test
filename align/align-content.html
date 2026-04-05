@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align-Content</title>
+
+    <link rel="stylesheet" href="..\style.css" />
+    <link rel="stylesheet" href="align.css" />
+    <link rel="icon" type="image/jpg" href="../1111.jpg" />
+  </head>
+  <body>
+    <iframe src="..\sidebar.html" class="sidebar-frame"></iframe>
+
+    <div class="container-wrapper">
+      <div class="text">
+        <h2 class="text-h1"><a href="#align-content">#align-content</a></h2>
+        <p>
+          Определяет, как каждая линия выравнивается внутри контейнера
+          flexbox/grid. Это применяется только в случае, если задано свойство
+          flex-wrap: wrap, и если в контейнере есть
+          <b>несколько линий</b> элементов flexbox/grid.
+        </p>
+      </div>
+    </div>
+
+    <div class="container-wrapper">
+      <div class="text">
+        <h4 class="copy-container" id="align-content">
+          align-content: stretch;
+        </h4>
+        <p>
+          "Каждая линия будет растягиваться, чтобы заполнить оставшееся
+          пространство.
+        </p>
+
+        <p>
+          В этом случае высота контейнера составляет 300px. Все элементы имеют
+          высоту 50px, за исключением второго, который имеет высоту 100px.
+        </p>
+
+        <ul>
+          <li>Первая линия имеет высоту 100px</li>
+          <li>Вторая линия имеет высоту 50px</li>
+          <li>Оставшееся пространство составляет 150px</li>
+        </ul>
+
+        <p>
+          Это оставшееся пространство распределяется поровну между двумя
+          линиями:
+        </p>
+
+        <ul>
+          <li>Первая линия теперь имеет высоту 175px</li>
+          <li>Вторая линия теперь имеет высоту 125px</li>
+        </ul>
+      </div>
+
+      <div class="example">
+        <div class="containeralign" style="align-content: stretch">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+          <div class="item">5</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-wrapper">
+      <div class="text">
+        <h4 class="copy-container">align-content: flex-start;</h4>
+        <p>
+          Каждая линия будет заполнять только пространство, которое ей
+          необходимо. Все они будут двигаться к началу поперечной оси контейнера
+          flexbox/grid.
+        </p>
+      </div>
+
+      <div class="example">
+        <div class="containeralign" style="align-content: flex-start">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+          <div class="item">5</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-wrapper">
+      <div class="text">
+        <h4 class="copy-container">align-content: flex-end;</h4>
+        <p>
+          Каждая линия будет заполнять только пространство, которое ей
+          необходимо. Все они будут двигаться к концу поперечной оси контейнера
+          flexbox/grid.
+        </p>
+      </div>
+
+      <div class="example">
+        <div class="containeralign" style="align-content: flex-end">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+          <div class="item">5</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-wrapper">
+      <div class="text">
+        <h4 class="copy-container">align-content: center;</h4>
+        <p>
+          Каждая линия будет заполнять только пространство, которое ей
+          необходимо. Все они будут двигаться к центру поперечной оси контейнера
+          flexbox/grid.
+        </p>
+      </div>
+
+      <div class="example">
+        <div class="containeralign" style="align-content: center">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+          <div class="item">5</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-wrapper">
+      <div class="text">
+        <h4 class="copy-container">align-content: space-around;</h4>
+        <p>
+          Каждая линия будет заполнять только пространство, которое ей
+          необходимо. Оставшееся пространство будет распределено равномерно
+          вокруг линий: перед первой, между двумя и после последней.
+        </p>
+      </div>
+
+      <div class="example">
+        <div class="containeralign" style="align-content: space-around">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+          <div class="item">5</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

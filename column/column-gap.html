@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" type="image/jpg" href="../1111.jpg" />
+</head>
+<body>
+  <!-- Подключение бокового меню -->
+  <iframe src="../sidebar.html" class="sidebar-frame" title="Боковая панель"></iframe>
+
+  <header>
+    <h2 class="text-h1"><a href="#column-gap">#column-gap</a></h2>
+    <p>Определяет зазор между столбцами элемента.</p>
+  </header>
+
+  <section>
+    <!-- Пример для column-gap: normal -->
+    <h4 class="copy-container" id="column-gap">column-gap: normal;</h4>
+    <p>Расстояние между столбцами устанавливается в соответствии со значением браузера по умолчанию, которое обычно составляет 1em.</p>
+    <div class="column-gapNormal">
+      <p class="block--alpha">Hello world</p>
+      <p class="block--beta">Foo bar</p>
+      <p class="block--pink">CSS Reference</p>
+    </div>
+  </section>
+
+  <section>
+    <!-- Пример для column-gap: 2px -->
+    <h4 class="copy-container">column-gap: 2px;</h4>
+    <p>Для зазора можно использовать значения пикселей.</p>
+    <p>Обратите внимание, что зазор появляется только между колоннами, а не на внешних сторонах крайних колонн.</p>
+    <div class="column-gapTwopx">
+      <p class="block--alpha">Hello world</p>
+      <p class="block--beta">Foo bar</p>
+      <p class="block--pink">CSS Reference</p>
+    </div>
+  </section>
+</body>
+</html>

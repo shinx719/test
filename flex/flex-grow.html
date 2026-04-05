@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Пример flex-grow</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" type="image/jpg" href="../1111.jpg" />
+  <style>
+    /* Общий стиль для flex-контейнеров */
+    .container {
+      display: flex;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 20px 0;
+      gap: 10px;
+    }
+    
+    /* Общий стиль для элементов внутри контейнера */
+    .container > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #310736;
+      /* Фиксированные размеры для наглядности */
+      width: 100px;
+      height: 100px;
+    }
+    
+    /* Пример 1: flex-grow: 0 */
+    .grow-0 {
+      flex-grow: 0;
+      background: #05ffb0; /* Зеленый */
+    }
+    
+    /* Пример 2: flex-grow: 1 */
+    .grow-1 {
+      flex-grow: 1;
+      background: #ff3860; /* Розовый */
+    }
+    
+    /* Пример 3: три элемента */
+    .item-green {
+      flex-grow: 1;
+      background: #05ffb0; /* Зеленый */
+    }
+    .item-pink {
+      flex-grow: 2;
+      background: #ff3860; /* Розовый */
+    }
+    .item-yellow {
+      flex-grow: 0;
+      background: #ffdd57; /* Желтый */
+    }
+  </style>
+</head>
+<body>
+  <!-- Подключение бокового меню -->
+  <iframe src="../sidebar.html" class="sidebar-frame" title="Боковая панель"></iframe>
+  
+  <div>
+    <h2 class="text-h1"><a href="#flex-grow">#flex-grow</a></h2>
+    <p>Определяет, насколько должен увеличиваться элемент Flexbox при наличии свободного места.</p>
+  </div>
+  
+  <!-- Пример с flex-grow: 0 -->
+  <div>
+    <h4 class="copy-container" id="flex-grow">flex-grow: 0;</h4>
+    <p>Элемент не будет расти и использует только необходимое пространство.</p>
+  </div>
+  <div class="container">
+    <div class="grow-0">Элемент</div>
+  </div>
+  
+  <!-- Пример с flex-grow: 1 -->
+  <div>
+    <h4 class="copy-container">flex-grow: 1;</h4>
+    <p>Элемент заполнит всё оставшееся пространство, если других flex-элементов с grow нет.</p>
+  </div>
+  <div class="container">
+    <div class="grow-1">Элемент</div>
+  </div>
+  
+  <!-- Пример с flex-grow для нескольких элементов -->
+  <div>
+    <h4 class="copy-container">flex-grow: 1, 2, 0;</h4>
+    <p>В этом примере оставшееся пространство разделено на 3 части:</p>
+    <ul>
+      <li>1 часть достается зеленому элементу (flex-grow: 1)</li>
+      <li>2 части достаются розовому элементу (flex-grow: 2)</li>
+      <li>Желтому элементу (flex-grow: 0) ничего не достается, он сохраняет свою первоначальную ширину.</li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="item-green">Зеленый</div>
+    <div class="item-pink">Розовый</div>
+    <div class="item-yellow">Желтый</div>
+  </div>
+  
+</body>
+</html>

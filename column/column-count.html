@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\style.css" />
+    <link rel="icon" type="image/jpg" href="../1111.jpg" />
+</head>
+<body>
+    <iframe src="..\sidebar.html" class="sidebar-frame"></iframe>
+
+    <div>
+        <h2 class="text-h1"><a href="#column-count">#column-count</a></h2>
+        <p>Определяет количество столбцов элемента.</p>
+    </div>
+
+    <div>
+        <h4 class="copy-container" id="column-count">column-count: auto;</h4>
+        <p>Удаляет все столбцы из элемента (если не column-было задано другое свойство).</p>
+    </div>
+    <div class="column-auto">
+        <p class="block block--alpha">Hello world</p>
+        <p class="block block--beta">Foo bar</p>
+        <p class="block block--pink">CSS Reference</p>
+    </div>
+
+    <div>
+        <h4 class="copy-container">column-count: 3;</h4>
+        <p>При использовании целочисленного значения элемент распределит свои дочерние элементы по количеству определенных столбцов.</p>
+    </div>
+    <div class="column-three">
+        <p class="column-three block--alpha">Hello world</p>
+        <p class="column-three block--beta">Foo bar</p>
+        <p class="column-three block--pink">CSS Reference</p>
+    </div>
+</body>
+</html>

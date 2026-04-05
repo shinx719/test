@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\style.css">
+    <link rel="icon" type="image/jpg" href="../1111.jpg">
+</head>
+<body>
+    <iframe src="..\sidebar.html" class="sidebar-frame"></iframe>
+    <div>
+        <h2 class="text-h1"><a href="">animation-name</a></h2>
+        <p>Определяет, какие ключевые кадры анимации использовать.</p>
+
+        <h4 class="copy-container">animation-name: none;</h4>
+        <p>Если имя анимации не указано, анимация не воспроизводится.</p>
+        <div class="container">
+          <div class="box none">none</div>
+        </div>
+
+        <h4 class="copy-container">animation-name: fadeIn;</h4>
+        <p>Если указано имя, будут использованы ключевые кадры, соответствующие этому имени.
+            Например, анимация fadeIn выглядит так:
+            <pre class="vlojeniy-text">
+                @keyframes fadeIn {
+                    from {
+                      opacity: 0;
+                    }
+                    to {
+                      opacity: 1;
+                    }
+                  }
+            </pre>
+        </p>
+        <div class="container">
+          <div class="box fadeIn">fadeIn</div>
+      </div>
+
+        <h4 class="copy-container">animation-name: moveRight;</h4>
+        <p>Другой пример: анимация moveRight:
+            <pre class="vlojeniy-text">
+                @keyframes moveRight {
+                    from {
+                      transform: translateX(0);
+                    }
+                    to {
+                      transform: translateX(100px);
+                    }
+                  }   
+            </pre>
+        </p>
+        <div class="container">
+          <div class="box moveRight">moveRight</div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\style.css" />
+    <link rel="icon" type="image/jpg" href="../1111.jpg" />
+</head>
+<body>
+    <iframe src="..\sidebar.html" class="sidebar-frame"></iframe>
+
+    <div>
+        <h2 class="text-h1">#background-origin</h2>
+        <p>Определяет происхождение фонового изображения.</p>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-origin: padding-box;</h4>
+        <p>Фоновое изображение начинается с края границы: внутри отступа, но не за пределами границы.</p>
+    </div>
+    <div class="container">
+        <div class="background-origin padding-box">padding-box</div>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-origin: border-box;</h4>
+        <p>Фоновое изображение начинается под рамкой.</p>
+    </div>
+    <div class="container">
+        <div class="background-origin border-box">border-box</div>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-origin: content-box;</h4>
+        <p>Фоновое изображение начинается только с края содержимого : оно не включает отступы и границы.</p>
+    </div>
+    <div class="container">
+        <div class="background-origin content-box">content-box</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пример column-width</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" type="image/jpg" href="../1111.jpg" />
+</head>
+<body>
+  <iframe src="../sidebar.html" class="sidebar-frame" title="Боковая панель"></iframe>
+
+  <header>
+    <h2 class="text-h1"><a href="#column-width">#column-width</a></h2>
+    <p>Определяет ширину столбцов элемента.</p>
+  </header>
+
+  <section>
+    <h4 class="copy-container" id="column-width">column-width: auto;</h4>
+    <p>Элемент автоматически распределяет содержимое по колонкам. Количество столбцов определяется браузером.</p>
+    <div class="column-widthauto">
+      <p>Hello world</p>
+      <p>Foo bar</p>
+      <p>CSS Reference</p>
+      <p>Another text block</p>
+      <p>More content to see effect</p>
+    </div>
+  </section>
+
+  <section>
+    <h4 class="copy-container">column-width: 10px;</h4>
+    <p>Ширина столбца фиксирована (10px). Количество столбцов зависит от ширины контейнера.</p>
+    <div class="column-widthTenpx">
+      <p>Hello world</p>
+      <p>Foo bar</p>
+      <p>CSS Reference</p>
+      <p>Another text block</p>
+      <p>More content to see effect</p>
+    </div>
+  </section>
+</body>
+</html>

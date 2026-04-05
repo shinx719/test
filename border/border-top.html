@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\style.css" />
+    <link rel="icon" type="image/jpg" href="../1111.jpg" />
+</head>
+<body>
+    <iframe src="..\sidebar.html" class="sidebar-frame"></iframe>
+
+    <div>
+        <h2 class="text-h1"><a href="#border-top">#border-top</a></h2>
+        <p>Сокращенное свойство для border-top-width border-top-style и border-top-color.</p>
+    </div>
+
+    <div>
+        <h4 class="copy-container" id="border-top">border-top: 4px dotted red;</h4>
+        <p>Порядок важен :</p>
+        <ul>
+            <li>ширина</li>
+            <li>стиль</li>
+            <li>цвет</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="border top px-dotted-red">4px dotted red</div>
+    </div>
+
+    <div>
+        <h4 class="copy-container">border-top: 2px solid;</h4>
+        <p>Необязательным является только цвет . Если его не указать, будет применен цвет текста .</p>
+    </div>
+    <div class="container">
+        <div class="border top solid">2px solid</div>
+    </div>
+</body>
+</html>

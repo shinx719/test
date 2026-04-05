@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="..\style.css" />
+    <link rel="icon" type="image/jpg" href="../1111.jpg" />
+  </head>
+  <body>
+    <iframe src="..\sidebar.html" class="sidebar-frame"></iframe>
+    <div>
+      <h2 class="text-h1"><a href="">animation-timing-function</a></h2>
+      <p></p>
+
+      <h4 class="copy-container">animation-timing-function: ease;</h4>
+      <p>
+        Анимация начинается медленно, ускоряется в середине и замедляется в
+        конце.
+      </p>
+      <div class="container">
+        <div class="box ease">ease</div>
+      </div>
+
+      <h4 class="copy-container">animation-timing-function: ease-in;</h4>
+      <p>Анимация начинается медленно и постепенно ускоряется до конца.</p>
+      <div class="container">
+        <div class="box ease-in">ease-in</div>
+      </div>
+
+      <h4 class="copy-container">animation-timing-function: ease-out;</h4>
+      <p>Анимация начинается быстро и постепенно замедляется до конца.</p>
+      <div class="container">
+        <div class="box ease-out">ease-out</div>
+      </div>
+
+      <h4 class="copy-container">animation-timing-function: ease-in-out;</h4>
+      <p>
+        Как ease, но с более выраженным эффектом. Анимация начинается быстро и
+        постепенно замедляется до конца.
+      </p>
+      <div class="container">
+        <div class="box ease-in-out">ease-in-out</div>
+      </div>
+
+      <h4 class="copy-container">animation-timing-function: linear;</h4>
+      <p>Анимация имеет *постоянную скорость.</p>
+      <div class="container">
+        <div class="box linear">linear</div>
+      </div>
+
+      <h4 class="copy-container">animation-timing-function: step-start;</h4>
+      <p>Анимация мгновенно переходит в конечное состояние.</p>
+      <div class="container">
+        <div class="box step-start">step-start</div>
+      </div>
+
+      <h4 class="copy-container">animation-timing-function: step-end;</h4>
+      <p>
+        Анимация остаётся в начальном состоянии до конца, а затем мгновенно
+        переходит в конечное состояние.
+      </p>
+      <div class="container">
+        <div class="box step-end">step-end</div>
+      </div>
+
+      <h4 class="copy-container">animation-timing-function: steps(4, end);</h4>
+      <p>
+        Используя steps() с целым числом, можно задать конкретное количество
+        шагов до достижения конечного состояния. Состояние элемента не будет
+        изменяться постепенно, а будет "перепрыгивать" из состояния в состояние
+        в отдельные моменты времени.
+      </p>
+      <div class="container">
+        <div class="box steps">steps</div>
+      </div>
+    </div>
+  </body>
+</html>

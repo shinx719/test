@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="..\style.css" />
+    <link rel="icon" type="image/jpg" href="../1111.jpg" />
+  </head>
+  <body>
+    <iframe src="..\sidebar.html" class="sidebar-frame"></iframe>
+    <div>
+      <h2 class="text-h1"><a href="">animation-play-state</a></h2>
+      <p>Определяет будет ли проигрываться анимация</p>
+
+      <h4 class="copy-container">animation-play-state: running;</h4>
+      <p>
+        Если заданы animation-duration и animation-name, анимация начнёт
+        воспроизводиться автоматически.
+      </p>
+      <div class="container">
+        <div class="box running">none</div>
+      </div>
+
+      <h4 class="copy-container">animation-play-state: paused;</h4>
+      <p>
+        Анимация установлена в состояние "приостановлено" на первом ключевом
+        кадре.
+      </p>
+
+      <p>
+        Это отличается от ситуации, когда не указаны animation-duration или
+        animation-name вообще. Если анимация приостановлена, применяется стиль
+        первого ключевого кадра, а не стиль по умолчанию.
+      </p>
+
+      <p>
+        В этом примере квадрат видим по умолчанию, но на первом ключевом кадре
+        анимации fadeAndMove его непрозрачность (opacity) установлена в 0. Когда
+        анимация приостановлена, она будет "застрявшей" на этом первом ключевом
+        кадре, и, следовательно, квадрат будет невидим.
+      </p>
+
+      <div class="vlojeniy-text">
+        <pre>
+                @keyframes fadeAndMove {
+                    from {
+                        opacity: 0;
+                        transform: translateX(0);
+                    }
+                    to {
+                        opacity: 0;
+                        transform: translateX(100px);
+                    }
+                    }
+            </pre
+        >
+      </div>
+      <div class="container">
+        <div class="box fadeAndMove">none</div>
+      </div>
+    </div>
+  </body>
+</html>

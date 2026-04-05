@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\style.css" />
+    <link rel="icon" type="image/jpg" href="../1111.jpg" />
+</head>
+<body>
+    <iframe src="..\sidebar.html" class="sidebar-frame"></iframe>
+    
+    <div>
+        <h2 class="text-h1">#background-clip</h2>
+        <p>Определяет, насколько далеко фон должен простираться внутри элемента.</p>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-clip: border-box;</h4>
+        <p>Фон полностью распространяется по всему элементу, даже под границей.</p>
+    </div>
+    <div class="container">
+        <div class="background-clip border-box">border-box</div>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-clip: padding-box;</h4>
+        <p>Фон распространяется только до края границы: он включает отступ (padding), но не границу (border).</p>
+    </div>
+    <div class="container">
+        <div class="background-clip padding-box">padding-box</div>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-clip: content-box;</h4>
+        <p>Фон распространяется только до края содержимого: он не включает отступ (padding) и границу (border).</p>
+    </div>
+    <div class="container">
+        <div class="background-clip content-box">content-box</div>
+    </div>
+</body>
+</html>

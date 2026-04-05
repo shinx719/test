@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Пример flex-wrap</title>
+  <style>
+    /* Общий стиль для контейнера */
+    .container {
+      display: flex;
+      border: 1px solid #ccc;
+      margin: 20px 0;
+      padding: 10px;
+      width: 300px; /* Фиксированная ширина для демонстрации переноса */
+    }
+    
+    /* Специфичные значения flex-wrap */
+    .flex-nowrap {
+      flex-wrap: nowrap;
+    }
+    
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+    
+    .flex-wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+    
+    /* Стили для элементов */
+    .item {
+      width: 80px;
+      height: 30px;
+      margin: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: #000000;
+    }
+    
+    .item-1 { background: #05ffb0; }
+    .item-2 { background: #00e7eb; }
+    .item-3 { background: #ff3860; }
+    .item-4 { background: #ffdd57; } /* темный текст для контраста */
+    .item-5 { background: #ff470f; }
+    .item-6 { background: #b86bff; }
+  </style>
+</head>
+<body>
+  <iframe src="..\sidebar.html" class="sidebar-frame"></iframe>
+  
+  <h2>flex-wrap: nowrap;</h2>
+  <p>Элементы располагаются в одну строку без переноса.</p>
+  <div class="container flex-nowrap">
+    <div class="item item-1">1</div>
+    <div class="item item-2">2</div>
+    <div class="item item-3">3</div>
+    <div class="item item-4">4</div>
+    <div class="item item-5">5</div>
+    <div class="item item-6">6</div>
+  </div>
+
+  <h2>flex-wrap: wrap;</h2>
+  <p>Элементы переносятся на новую строку, если не помещаются в контейнер.</p>
+  <div class="container flex-wrap">
+    <div class="item item-1">1</div>
+    <div class="item item-2">2</div>
+    <div class="item item-3">3</div>
+    <div class="item item-4">4</div>
+    <div class="item item-5">5</div>
+    <div class="item item-6">6</div>
+  </div>
+
+  <h2>flex-wrap: wrap-reverse;</h2>
+  <p>Элементы переносятся, но порядок строк перевёрнут (нижняя строка появляется первой).</p>
+  <div class="container flex-wrap-reverse">
+    <div class="item item-1">1</div>
+    <div class="item item-2">2</div>
+    <div class="item item-3">3</div>
+    <div class="item item-4">4</div>
+    <div class="item item-5">5</div>
+    <div class="item item-6">6</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="..\style.css" />
+    <link rel="icon" type="image/jpg" href="../1111.jpg" />
+  </head>
+  <body>
+    <iframe src="..\sidebar.html" class="sidebar-frame"></iframe>
+    <h2 class="text-h1">
+      <a href="#animation-direction">#animation-direction</a>
+    </h2>
+    <p>Определяет, в каком направлении будет воспроизводиться анимация.</p>
+
+    <h4 class="copy-container" id="animation-direction">
+      animation-direction: normal;
+    </h4>
+    <p>
+      Анимация воспроизводится по порядку. Когда она достигает конца, начинается
+      заново с первого ключевого кадра.
+    </p>
+    <div class="container">
+      <div class="box normal">normal</div>
+    </div>
+
+    <h4 class="copy-container">animation-direction: reverse;</h4>
+    <p>
+      Анимация воспроизводится в обратном порядке: начинается с последнего
+      ключевого кадра и заканчивается на первом.
+    </p>
+    <div class="container">
+      <div class="box reverse">reverse</div>
+    </div>
+
+    <h4 class="copy-container">animation-direction: alternate;</h4>
+    <p>
+      Анимация воспроизводится сначала по порядку, а затем в обратном порядке.
+    </p>
+    <ul>
+      <li>Начинается с первого ключевого кадра</li>
+      <li>останавливается на последнем ключевом кадре</li>
+      <li>затем начинается снова, но с последнего ключевого кадра</li>
+      <li>останавливается на первом ключевом кадре</li>
+    </ul>
+    <div class="container">
+      <div class="box alternate">alternate</div>
+    </div>
+
+    <h4 class="copy-container">animation-direction: alternate-reverse;</h4>
+    <p>
+      Анимация воспроизводится сначала в обратном порядке, а затем по порядку:
+    </p>
+    <ul>
+      <li>начинается с последнего ключевого кадра</li>
+      <li>останавливается на первом ключевом кадре</li>
+      <li>затем начинается снова, но с первого ключевого кадра</li>
+      <li>останавливается на последнем ключевом кадре</li>
+    </ul>
+    <div class="container">
+      <div class="box alternate-reverse">alternate-reverse</div>
+    </div>
+  </body>
+</html>

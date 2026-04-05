@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Пример flex-shrink</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" type="image/jpg" href="../1111.jpg" />
+  <style>
+    /* Общий стиль для flex-контейнеров примеров 1 и 2 */
+    .container {
+      display: flex;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 20px 0;
+      gap: 10px;
+    }
+    /* Чтобы показать сжатие, ограничим ширину контейнера */
+    .shrink-example {
+      width: 300px;
+    }
+    /* Общие стили для элементов (одного элемента в примерах 1 и 2) */
+    .container > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #310736;
+      /* Базовый размер, больше чем ширина контейнера */
+      flex-basis: 400px;
+      height: 100px;
+    }
+    /* Пример 1: flex-shrink: 1 */
+    .shrink-1 {
+      flex-shrink: 1;
+      background: #05ffb0; /* Зеленый */
+    }
+    /* Пример 2: flex-shrink: 0 */
+    .shrink-0 {
+      flex-shrink: 0;
+      background: #ff3860; /* Розовый/Красный */
+    }
+    
+    /* Пример 3: относительные коэффициенты flex-shrink */
+    .shrink-example-3 {
+      display: flex;
+      width: 1000px; /* Фиксированная ширина контейнера для наглядности */
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 20px 0;
+      gap: 10px;
+    }
+    /* Каждый элемент в третьем примере */
+    .shrink-example-3 > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #310736;
+      height: 100px;
+    }
+    /* Зеленый элемент – он «хочет» занять 100% контейнера */
+    .shrink-green {
+      flex-basis: 600px;
+      flex-shrink: 2;
+      background: #05ffb0;
+    }
+    /* Красный элемент */
+    .shrink-red {
+      flex-basis: 300px;
+      flex-shrink: 3;
+      background: #ff3860;
+    }
+    /* Желтый элемент */
+    .shrink-yellow {
+      flex-basis: 300px;
+      flex-shrink: 1;
+      background: #ffdd57;
+    }
+  </style>
+</head>
+<body>
+  <!-- Подключение бокового меню -->
+  <iframe src="../sidebar.html" class="sidebar-frame" title="Боковая панель"></iframe>
+  
+  <div>
+    <h2 class="text-h1"><a href="#flex-shrink">#flex-shrink</a></h2>
+    <p>Определяет, насколько должен сжиматься элемент Flexbox, если недостаточно места.</p>
+  </div>
+  
+  <!-- Пример 1: flex-shrink: 1 -->
+  <div>
+    <h4 class="copy-container" id="flex-shrink">flex-shrink: 1;</h4>
+    <p>Если на главной оси контейнера недостаточно места, элемент с <code>flex-shrink: 1</code> уменьшится, чтобы вместиться.</p>
+  </div>
+  <div class="container shrink-example">
+    <div class="shrink-1">Элемент</div>
+  </div>
+  
+  <!-- Пример 2: flex-shrink: 0 -->
+  <div>
+    <h4 class="copy-container">flex-shrink: 0;</h4>
+    <p>Элемент с <code>flex-shrink: 0</code> не будет сжиматься – он сохранит свою исходную ширину, даже если места недостаточно.</p>
+    <p>В этом случае может возникнуть переполнение контейнера.</p>
+  </div>
+  <div class="container shrink-example">
+    <div class="shrink-0">Элемент</div>
+  </div>
+  
+  <!-- Пример 3: относительные коэффициенты flex-shrink -->
+  <div>
+    <h4 class="copy-container">flex-shrink: 2;</h4>
+    <p>
+      В этом примере зеленый элемент хочет заполнить 100% ширины контейнера. Но поскольку суммарный базовый размер элементов превышает ширину контейнера, лишнее пространство берется у его братьев и сестер.
+      Оно делится на 4 части: 3 части (3/4) берутся из красного элемента и 1 часть (1/4) – из желтого.
+    </p>
+  </div>
+  <div class="shrink-example-3">
+    <div class="shrink-green">Зеленый</div>
+    <div class="shrink-red">Красный</div>
+    <div class="shrink-yellow">Желтый</div>
+  </div>
+  
+</body>
+</html>

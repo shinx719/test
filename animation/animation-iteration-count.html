@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="..\style.css" />
+    <link rel="icon" type="image/jpg" href="../1111.jpg" />
+  </head>
+  <body>
+    <iframe src="..\sidebar.html" class="sidebar-frame"></iframe>
+    <div>
+      <h2 class="text-h1">
+        <a href="#animation-iteration-count">#animation-iteration-count</a>
+      </h2>
+      <p>Определяет сколько раз проиграется анимация</p>
+
+      <h4 class="copy-container" id="animation-iteration-count">
+        animation-iteration-count: 1;
+      </h4>
+      <p>Анимация проиграется только один раз</p>
+      <div class="container">
+        <div class="box iteration1">none</div>
+      </div>
+
+      <h4 class="copy-container">animation-iteration-count: 2;</h4>
+      <p>
+        Можно использовать целые числа для выбора сколько раз проиграется
+        анимация
+      </p>
+      <div class="container">
+        <div class="box iteration2">none</div>
+      </div>
+
+      <h4 class="copy-container">animation-iteration-count: infinite;</h4>
+      <p>Используя <b>infinite</b> анимация будет проигрываться бесконечно</p>
+      <div class="container">
+        <div class="box iterationinfinity">none</div>
+      </div>
+    </div>
+  </body>
+</html>

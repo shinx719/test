@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="..\style.css" />
+    <link rel="icon" type="image/jpg" href="../1111.jpg" />
+  </head>
+  <body>
+    <iframe src="..\sidebar.html" class="sidebar-frame"></iframe>
+    <div>
+      <h2 class="text-h1"><a href="#animation-delay">animation-delay</a></h2>
+      <p>
+        Определяет, сколько времени анимация должна ожидать перед
+        <b>началом</b>. Задержка применяется только к первому запуску анимации.
+      </p>
+
+      <h4 class="copy-container" id="animation-delay">animation-delay: 0s;</h4>
+      <p>Анимация будет ждать <b>ноль секунд</b> и начнется сразу.</p>
+      <div class="container">
+        <div class="box delay-0">0s</div>
+      </div>
+
+      <h4 class="copy-container">animation-delay: 1.2s;</h4>
+      <p>
+        Вы можете использовать <b>десятичные значения</b> в секундах с ключевым
+        словом s.
+      </p>
+      <div class="container">
+        <div class="box delay-1-2">1.2s</div>
+      </div>
+
+      <h4 class="copy-container">animation-delay: 2400ms;</h4>
+      <p>
+        Вы можете использовать <b>миллисекунды</b> вместо секунд, с ключевым
+        словом ms.
+      </p>
+      <div class="container">
+        <div class="box delay-2400ms">2400ms</div>
+      </div>
+
+      <h4 class="copy-container">animation-delay: -500ms;</h4>
+      <p>
+        Вы можете использовать <b>отрицательные значения</b> анимация начнется
+        так, как если бы она уже проигрывалась в течение 500 мс.
+      </p>
+      <div class="container">
+        <div class="box delay-minus-500">-500ms</div>
+      </div>
+    </div>
+  </body>
+</html>

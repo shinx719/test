@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="..\style.css" />
+    <link rel="icon" type="image/jpg" href="../1111.jpg" />
+  </head>
+  <body>
+    <iframe src="..\sidebar.html" class="sidebar-frame"></iframe>
+    <div>
+      <h2 class="text-h1"><a href="">animation-fill-mode</a></h2>
+      <p>
+        Определяет, что происходит до начала анимации и после её окончания.
+        Режим заполнения позволяет указать браузеру, должны ли стили анимации
+        также применяться за пределами самой анимации.
+      </p>
+
+      <h4 class="copy-container">animation-fill-mode: none;</h4>
+      <p>
+        Стили анимации не влияют на стиль по умолчанию: элемент устанавливается
+        в своё состояние по умолчанию до начала анимации и возвращается к этому
+        состоянию после её завершения.
+      </p>
+      <div class="container">
+        <div class="boxfill none">none</div>
+      </div>
+
+      <h4 class="copy-container">animation-fill-mode: forwards;</h4>
+      <p>
+        Последние стили, применённые в конце анимации, сохраняются после её
+        завершения.
+      </p>
+      <div class="container">
+        <div class="boxfill forwards">forwards</div>
+      </div>
+
+      <h4 class="copy-container">animation-fill-mode: backwards;</h4>
+      <p>Стили анимации будут применены ещё до того, как анимация начнется.</p>
+      <div class="container">
+        <div class="boxfill backwards">backwards</div>
+      </div>
+
+      <h4 class="copy-container">animation-fill-mode: both;</h4>
+      <p>Стили применяются до и после воспроизведения анимации.</p>
+      <div class="container">
+        <div class="boxfill both">both</div>
+      </div>
+    </div>
+  </body>
+</html>

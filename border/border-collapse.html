@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="..\style.css" />
+  <link rel="icon" type="image/jpg" href="../1111.jpg" />
+</head>
+<body>
+  <iframe src="..\sidebar.html" class="sidebar-frame"></iframe>
+
+  <div>
+    <h2 class="text-h1"><a href="#border-collapse">#border-collapse</a></h2>
+    <p>Определяет, следует ли разделять или сворачивать границы таблицы.</p>
+  </div>
+
+  <div>
+    <h4 class="copy-container" id="border-collapse">border-collapse: separate;</h4>
+    <p>Каждая ячейка таблицы будет иметь собственные границы.</p>
+    <p>В этом примере каждая ячейка имеет размер border-width 4px. В результате граница между двумя ячейками будет 8px.</p>
+  </div>
+  <div class="container">
+    <table class="separate-table">
+      <tr>
+        <th>Заголовок 1</th>
+        <th>Заголовок 2</th>
+      </tr>
+      <tr>
+        <td>Ячейка 1</td>
+        <td>Ячейка 2</td>
+      </tr>
+      <tr>
+        <td>Ячейка 3</td>
+        <td>Ячейка 4</td>
+      </tr>
+    </table>
+
+  <div>
+    <h4 class="copy-container">border-collapse: collapse;</h4>
+    <p>Границы соседних ячеек таблицы будут объединены.</p>
+    <p>Ячейка, которая появляется в коде первой, «победит»: ее границы закроют границы следующих ячеек.</p>
+  </div>
+  <div class="container">
+
+    <table class="collapse-table">
+      <tr>
+        <th>Заголовок 1</th>
+        <th>Заголовок 2</th>
+      </tr>
+      <tr>
+        <td>Ячейка 1</td>
+        <td>Ячейка 2</td>
+      </tr>
+      <tr>
+        <td>Ячейка 3</td>
+        <td>Ячейка 4</td>
+      </tr>
+    </table>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\style.css" />
+    <link rel="icon" type="image/jpg" href="../1111.jpg" />
+</head>
+<body>
+    <iframe src="..\sidebar.html" class="sidebar-frame"></iframe>
+
+    <div>
+        <h2 class="text-h1"><a href="auto">#box-sizing</a></h2>
+        <p>Определяет, как рассчитываются ширина и высота элемента: включают ли они отступы и границы или нет.</p>
+    </div>
+
+    <div>
+        <h4 class="copy-container">box-sizing: content-box;</h4>
+        <p>Ширина и высота элемента применяются только к содержимому элемента .</p>
+        <p>Например, этот элемент имеет</p>
+        <ul>
+            <li>border-width: 12px</li>
+            <li>padding: 30px</li>
+            <li>width: 200px</li>
+        </ul>
+        <p>Полная ширина составляет 24px + 60px + 200px = 284px .</p>
+        <p>Содержимое имеет определенную ширину. Коробка соответствует этим размерам.</p>
+    </div>
+    <div class="container">
+        <div class="box-sizing content-box">content-box</div>
+    </div>
+
+    <div>
+        <h4 class="copy-container">box-sizing: border-box;</h4>
+        <p>Ширина и высота элемента применяются ко всем его частям : содержимому , отступам и границам .</p>
+        <p>Например, этот элемент имеет</p>
+        <ul>
+            <li>border-width: 12px</li>
+            <li>padding: 30px</li>
+            <li>width: 200px</li>
+        </ul>
+        <p>Полная ширина — 200 пикселей , неважно.</p>
+        <p>Поле имеет определенную ширину. Содержимое соответствует этим размерам и в итоге составляет 200px - 60px - 24px = 116px .</p>
+    </div>
+    <div class="container">
+        <div class="box-sizing border-box">border-box</div>
+      </div>
+</body>
+</html>

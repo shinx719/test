@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="align.css" />
+    <link rel="stylesheet" href="..\style.css" />
+    <link rel="icon" type="image/jpg" href="../1111.jpg" />
+  </head>
+  <body>
+    <iframe src="..\sidebar.html" class="sidebar-frame"></iframe>
+    <div class="con">
+      <h2 class="text-h1"><a href="#align-self">#align-self</a></h2>
+      <p>
+        Работает как align-items, но применяется только к одному элементу
+        flexbox, а не ко всем сразу.
+      </p>
+
+      <h4 class="copy-container" id="align-self">align-self: auto;</h4>
+
+      <p>Целевой элемент будет использовать значение align-items.</p>
+
+      <div class="example">
+        <div class="container-items">
+          <div class="item3">1</div>
+          <div class="item3" style="align-self: auto">2</div>
+          <div class="item3">3</div>
+          <div class="item3">4</div>
+          <div class="item3">5</div>
+        </div>
+      </div>
+
+      <h4 class="copy-container">align-self: flex-start;</h4>
+
+      <p>
+        Если у контейнера установлено align-items: center, а у целевого элемента
+        — align-self: flex-start, только целевой элемент будет находиться в
+        начале поперечной оси.
+      </p>
+      <p>
+        По умолчанию это означает, что элемент будет выровнен вертикально по
+        верхнему краю.
+      </p>
+
+      <div class="example">
+        <div class="container-items">
+          <div class="item3">1</div>
+          <div class="item3" style="align-self: flex-start">2</div>
+          <div class="item3">3</div>
+          <div class="item3">4</div>
+          <div class="item3">5</div>
+        </div>
+      </div>
+
+      <h4 class="copy-container">align-self: flex-end;</h4>
+
+      <p>
+        Если у контейнера установлено align-items: center, а у целевого элемента
+        — align-self: flex-end, только целевой элемент будет находиться в конце
+        поперечной оси.
+      </p>
+      <p>
+        По умолчанию это означает, что элемент будет выровнен вертикально по
+        нижнему краю.
+      </p>
+
+      <div class="example">
+        <div class="container-items">
+          <div class="item3">1</div>
+          <div class="item3" style="align-self: flex-end">2</div>
+          <div class="item3">3</div>
+          <div class="item3">4</div>
+          <div class="item3">5</div>
+        </div>
+      </div>
+
+      <h4 class="copy-container">align-self: center;</h4>
+
+      <p>
+        Если у контейнера установлено align-items: flex-start, а у целевого
+        элемента — align-self: center, только целевой элемент будет находиться в
+        центре поперечной оси.
+      </p>
+      <p>
+        По умолчанию это означает, что элемент будет выровнен по вертикали по
+        центру.
+      </p>
+
+      <div class="example">
+        <div class="container-items1">
+          <div class="item3">1</div>
+          <div class="item3" style="align-self: center">2</div>
+          <div class="item3">3</div>
+          <div class="item3">4</div>
+          <div class="item3">5</div>
+        </div>
+      </div>
+
+      <h4 class="copy-container">align-self: baseline;</h4>
+
+      <p>
+        Если у контейнера установлено align-items: center, а у целевого элемента
+        — align-self: baseline, только целевой элемент будет находиться на
+        базовой линии поперечной оси.
+      </p>
+      <p>
+        По умолчанию это означает, что элемент будет выровнен вдоль базовой
+        линии текста.
+      </p>
+
+      <div class="example">
+        <div class="container-items">
+          <div class="item3">1</div>
+          <div class="item3" style="align-self: baseline">2</div>
+          <div class="item3">3</div>
+          <div class="item3">4</div>
+          <div class="item3">5</div>
+        </div>
+      </div>
+
+      <h4 class="copy-container">align-self: stretch;</h4>
+
+      <p>
+        Если у контейнера установлено align-items: center, а у целевого элемента
+        — align-self: stretch, только целевой элемент будет растягиваться по
+        всей поперечной оси.
+      </p>
+
+      <div class="example">
+        <div class="container-items">
+          <div class="item3">1</div>
+          <div class="item2A" style="align-self: stretch">2</div>
+          <div class="item3">3</div>
+          <div class="item3">4</div>
+          <div class="item3">5</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

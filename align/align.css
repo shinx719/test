@@ -1,0 +1,110 @@
+.container-wrapper {
+  display: flex;
+  align-items: flex-start; /* Выравниваем элементы по верхней границе */
+  gap: 20px; /* Отступ между текстом и блоками */
+  margin-bottom: 20px;
+}
+
+.containeralign {
+  display: flex;
+  flex-wrap: wrap;
+  width: 330px;
+  height: 250px;
+  border: 2px solid black; /* Черная граница контейнера */
+  align-content: stretch; /* Можно менять на другие значения */
+}
+
+.item {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(22, 22, 22);
+  color: rgb(255, 255, 255);
+  margin: 5px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.item:nth-child(2) {
+  height: 100px;
+}
+
+.text-h1 a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.text-h1 a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.container-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 150px;
+  border: 2px solid black; /* Черная граница контейнера */
+}
+
+.container-items1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  width: 500px;
+  height: 150px;
+  border: 2px solid black; /* Черная граница контейнера */
+}
+
+.item2 {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(22, 22, 22);
+  color: rgb(255, 255, 255);
+  margin: 5px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.item2:nth-child(2) {
+  height: 100px;
+}
+
+.item2:nth-child(4) {
+  height: 70px;
+}
+
+.item2A {
+  width: 100px;
+  flex-grow: 1;
+  background-color: rgb(22, 22, 22);
+  color: rgb(255, 255, 255);
+  margin: 5px;
+  text-align: center;
+  line-height: 140px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.item3 {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(22, 22, 22);
+  color: rgb(255, 255, 255);
+  margin: 5px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.item3:nth-child(4) {
+  height: 70px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\style.css" />
+    <link rel="icon" type="image/jpg" href="../1111.jpg" />
+</head>
+<body>
+    <iframe src="..\sidebar.html" class="sidebar-frame"></iframe>
+
+    <div>
+        <h2 class="text-h1">#background-image</h2>
+        <p>Определяет изображение как фон элемента.</p>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-image: none;</h4>
+        <p>Удаляет все фоновые изображения.</p>
+    </div>
+    <div class="container">
+        <div class="background-image none"></div>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-image: url();</h4>
+        <p>Использует изображение, определенное в пути URL . Этот путь может быть как относительным (к файлу css), так и абсолютным</p>
+    </div>
+    <div class="container">
+        <div class="background-image url"></div>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-image: linear-gradient(red, blue);</h4>
+        <p>В качестве фонового изображения можно определить линейный градиент .</p>
+            <p>Вам нужно определить как минимум два цвета . Первый будет начинаться сверху, второй снизу.</p>
+            <p>Угол по умолчанию равен to bottom(или 180deg), что означает, что градиент вертикальный , начинается сверху и заканчивается внизу элемента.</p>
+    </div>
+    <div class="container">
+        <div class="background-image linear-gradientRedBlue"></div>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-image: linear-gradient(45deg, red, blue);</h4>
+        <p>Вы можете указать угол либо в градусах , либо с помощью ключевых слов.</p>
+
+        <p>При использовании degress вы указываете направление градиента или когда он заканчивается. Так что это 0degозначает верхнюю часть элемента, как 12:00 на часах.</p>
+            
+        <p>В этом примере 45degозначает 2:30 или верхний правый угол.</p>
+    </div>
+    <div class="container">
+        <div class="background-image linear-gradientRedBlueDeg"></div>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-image: radial-gradient(green, purple);</h4>
+        <p>В качестве фонового изображения можно определить радиальный градиент .</p>
+
+        <p>Вам нужно определить как минимум два цвета . Первый будет в центре, второй по краям.</p>
+    </div>
+    <div class="container">
+        <div class="background-image radial-gradientGreenPurple"></div>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-image: radial-gradient(circle, green, purple);</h4>
+        <p class="text">Вы можете указать форму радиального градиента: круг или эллипс (по умолчанию).</p>
+    </div>
+    <div class="container">
+        <div class="background-image radial-gradientGreenPurpleCircle"></div>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-image: radial-gradient(circle, green 0%, purple 20%, orange 100%);</h4>
+        <p>Вы можете указать цветовые точки, используя процентные значения.</p>
+    </div>
+    <div class="container">
+        <div class="background-image radial-gradientGreenPurpleOrange"></div>
+    </div>
+
+    <div>
+        <h4 class="copy-container">background-image: radial-gradient(circle closest-side, green 0%, purple 20%, orange 100%);</h4>
+        <p>Вы можете указать , где должен заканчиваться градиент :</p>
+        <ul>
+            <li>closest-side</li>
+            <li>closest-corne</li>
+            <li>farthest-side</li>
+            <li>farthest-corner</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="background-image radial-gradientGreenPurpleOrangeClosest"></div>
+    </div>
+    
+    <div>
+        <h4 class="copy-container">background-image: radial-gradient(circle closest-side at 45px 45px, green 0%, purple 20%, orange 100%);</h4>
+        <p">Как и в случае с background-position, вы можете указать положение градиента.</p>
+    </div>
+    <div class="container">
+        <div class="background-image radial-gradientPx"></div>
+    </div>
+</body>
+</html>
